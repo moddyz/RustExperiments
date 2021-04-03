@@ -1,0 +1,6 @@
+[package]
+name = "ownership"
+version = "0.0.0"
+authors = ["moddyz <moddy3d@gmail.com>"]
+
+[dependencies]
