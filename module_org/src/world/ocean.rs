@@ -1,3 +1,3 @@
 pub fn find_mermaids() {
-    super::find_people(); 
+    super::find_people();
 }
