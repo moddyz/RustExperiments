@@ -8,4 +8,5 @@ members = [
     "control_flow",
     "ownership",
     "option",
+    "module_org",
 ]
