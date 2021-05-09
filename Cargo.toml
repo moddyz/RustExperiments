@@ -10,4 +10,5 @@ members = [
     "option",
     "module_org",
     "vectors",
+    "strings",
 ]
