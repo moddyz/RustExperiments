@@ -1,13 +1,13 @@
 fn main() {
     // Create a new mutable string.
-    let mut s = String::new();
+    let mut _s = String::new();
 
     // Initialize a String from a string literal.
     // All 3 "string = ..." are equivalent.
     let string_literal = "my string.";
-    let string = string_literal.to_string();
-    let string = "my_string".to_string();
-    let string = String::from("my_string");
+    let _string = string_literal.to_string();
+    let _string = "my_string".to_string();
+    let _string = String::from("my_string");
 
     // Appending string to a string.
     let mut s = String::from("foo");

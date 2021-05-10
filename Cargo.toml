@@ -1,14 +1,51 @@
-[workspace]
-members = [
-    "hello_world", 
-    "guessing_game", 
-    "variables_and_mutability", 
-    "data_types", 
-    "functions",
-    "control_flow",
-    "ownership",
-    "option",
-    "module_org",
-    "vectors",
-    "strings",
-]
+[package]
+name = "rust-sandbox"
+version = "0.0.0"
+authors = ["moddyz <moddy3d@gmail.com>"]
+
+[lib]
+name = "rustsandbox"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hello_world"
+path = "src/bin/hello_world.rs"
+
+[[bin]]
+name = "functions"
+path = "src/bin/functions.rs"
+
+[[bin]]
+name = "strings"
+path = "src/bin/strings.rs"
+
+[[bin]]
+name = "ownership"
+path = "src/bin/ownership.rs"
+
+[[bin]]
+name = "data_types"
+path = "src/bin/data_types.rs"
+
+[[bin]]
+name = "control_flow"
+path = "src/bin/control_flow.rs"
+
+[[bin]]
+name = "variables_and_mutability"
+path = "src/bin/variables_and_mutability.rs"
+
+[[bin]]
+name = "vectors"
+path = "src/bin/vectors.rs"
+
+[[bin]]
+name = "guessing_game"
+path = "src/bin/guessing_game.rs"
+
+[[bin]]
+name = "option"
+path = "src/bin/option.rs"
+
+[dependencies]
+rand = "0.5.5"

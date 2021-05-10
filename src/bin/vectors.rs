@@ -1,9 +1,9 @@
 fn main() {
     // Creating a new empty vector.
-    let v: Vec<i32> = Vec::new();
+    let _v: Vec<i32> = Vec::new();
 
     // Creating a vector with a few entries.
-    let v = vec![1, 2, 3];
+    let _v = vec![1, 2, 3];
 
     // Create a mutable vector and push some elements to it.
     let mut v: Vec<i32> = Vec::new();
@@ -35,5 +35,5 @@ fn main() {
         Float(f64),
     }
 
-    let v = vec![Variant::Int(3), Variant::Float(3.5)];
+    let _v = vec![Variant::Int(3), Variant::Float(3.5)];
 }

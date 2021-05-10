@@ -24,7 +24,7 @@ fn main() {
 
         // b takes ownership from a.
         // This operation is called a "move".
-        let b = a;
+        let _b = a;
 
         // Line below will not compile.
         //println!("a = {}", a);
