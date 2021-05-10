@@ -3,3 +3,17 @@
 # RustSandbox
 
 Experimentation with the Rust language.
+
+
+## Table of Contents
+
+- [Building](#building)
+
+## Building
+
+[Get the rust toolchain](https://www.rust-lang.org/tools/install).
+
+... then build:
+```
+cargo build
+```
