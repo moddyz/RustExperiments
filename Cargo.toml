@@ -47,5 +47,9 @@ path = "src/bin/guessing_game.rs"
 name = "option"
 path = "src/bin/option.rs"
 
+[[bin]]
+name = "hash_maps"
+path = "src/bin/hash_maps.rs"
+
 [dependencies]
 rand = "0.5.5"
