@@ -55,5 +55,9 @@ path = "src/bin/hash_maps.rs"
 name = "panic"
 path = "src/bin/panic.rs"
 
+[[bin]]
+name = "recoverable_errors"
+path = "src/bin/recoverable_errors.rs"
+
 [dependencies]
 rand = "0.5.5"
