@@ -51,5 +51,9 @@ path = "src/bin/option.rs"
 name = "hash_maps"
 path = "src/bin/hash_maps.rs"
 
+[[bin]]
+name = "panic"
+path = "src/bin/panic.rs"
+
 [dependencies]
 rand = "0.5.5"
