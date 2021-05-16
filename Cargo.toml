@@ -59,5 +59,9 @@ path = "src/bin/panic.rs"
 name = "recoverable_errors"
 path = "src/bin/recoverable_errors.rs"
 
+[[bin]]
+name = "generic_data_types"
+path = "src/bin/generic_data_types.rs"
+
 [dependencies]
 rand = "0.5.5"
