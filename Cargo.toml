@@ -63,5 +63,9 @@ path = "src/bin/recoverable_errors.rs"
 name = "generic_data_types"
 path = "src/bin/generic_data_types.rs"
 
+[[bin]]
+name = "traits"
+path = "src/bin/traits.rs"
+
 [dependencies]
 rand = "0.5.5"
