@@ -71,5 +71,9 @@ path = "src/bin/traits.rs"
 name = "lifetimes"
 path = "src/bin/lifetimes.rs"
 
+[[bin]]
+name = "minigrep"
+path = "src/bin/minigrep.rs"
+
 [dependencies]
 rand = "0.5.5"
