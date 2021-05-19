@@ -1,4 +1,5 @@
 use std::env;
+use std::fs;
 
 fn main() {
     // Collect command line arguments.
@@ -9,4 +10,7 @@ fn main() {
 
     println!("Searching for {}", pattern);
     println!("In file {}", filename);
+
+    let contents = fs::read_to_string(filename).expect("Failed to read file");
+    println!("Text: {}", contents);
 }
