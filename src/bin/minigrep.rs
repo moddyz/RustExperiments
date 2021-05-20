@@ -1,28 +1,24 @@
 use std::env;
-use std::fs;
+use std::process;
 
-struct Config {
-    pattern: String,
-    filename: String,
-}
+extern crate rustsandbox;
 
-impl Config {
-    fn new(args: &[String]) -> Config {
-        let pattern = args[1].clone();
-        let filename = args[2].clone();
-        Config { pattern, filename }
-    }
-}
+use rustsandbox::config::Config;
 
 fn main() {
     // Collect command line arguments.
     let args: Vec<String> = env::args().collect();
 
-    let config = Config::new(&args);
+    let config = Config::new(&args).unwrap_or_else(|err| {
+        println!("Problem parsing arguments: {}", err);
+        process::exit(1);
+    });
 
     println!("Searching for {}", config.pattern);
     println!("In file {}", config.filename);
 
-    let contents = fs::read_to_string(config.filename).expect("Failed to read file");
-    println!("Text: {}", contents);
+    if let Err(e) = rustsandbox::config::run(config) {
+        println!("Application error: {}", e);
+        process::exit(1);
+    }
 }
