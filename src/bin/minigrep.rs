@@ -3,7 +3,7 @@ use std::process;
 
 extern crate rustsandbox;
 
-use rustsandbox::config::Config;
+use rustsandbox::minigrep::Config;
 
 fn main() {
     // Collect command line arguments.
@@ -17,7 +17,7 @@ fn main() {
     println!("Searching for {}", config.pattern);
     println!("In file {}", config.filename);
 
-    if let Err(e) = rustsandbox::config::run(config) {
+    if let Err(e) = rustsandbox::minigrep::run(config) {
         println!("Application error: {}", e);
         process::exit(1);
     }
