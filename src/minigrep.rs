@@ -20,9 +20,21 @@ impl Config {
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.filename)?;
+
+    for line in search(&config.pattern, &contents) {
+        println!("{}", line);
+    }
+
     Ok(())
 }
 
-pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
-    vec![]
+pub fn search<'a>(pattern: &str, contents: &'a str) -> Vec<&'a str> {
+    let mut results = Vec::new();
+    for line in contents.lines() {
+        if line.contains(pattern) {
+            results.push(line);
+        }
+    }
+
+    results
 }
