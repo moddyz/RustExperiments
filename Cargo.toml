@@ -97,5 +97,9 @@ path = "src/bin/box.rs"
 name = "deref"
 path = "src/bin/deref.rs"
 
+[[bin]]
+name = "drop"
+path = "src/bin/drop.rs"
+
 [dependencies]
 rand = "0.5.5"
