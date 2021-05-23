@@ -93,5 +93,9 @@ path = "src/bin/iterators.rs"
 name = "box"
 path = "src/bin/box.rs"
 
+[[bin]]
+name = "deref"
+path = "src/bin/deref.rs"
+
 [dependencies]
 rand = "0.5.5"
