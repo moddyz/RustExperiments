@@ -6,6 +6,7 @@ mod test;
 #[path = "./minigrep_test.rs"]
 mod minigrep_test;
 
+pub mod doctest;
 pub mod minigrep;
 mod world;
 

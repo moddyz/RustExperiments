@@ -3,6 +3,12 @@ name = "rustsandbox"
 version = "0.0.0"
 authors = ["moddyz <moddy3d@gmail.com>"]
 
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
 [lib]
 name = "rustsandbox"
 path = "src/lib.rs"
