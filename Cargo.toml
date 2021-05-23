@@ -79,5 +79,9 @@ path = "src/bin/minigrep.rs"
 name = "closures"
 path = "src/bin/closures.rs"
 
+[[bin]]
+name = "iterators"
+path = "src/bin/iterators.rs"
+
 [dependencies]
 rand = "0.5.5"
