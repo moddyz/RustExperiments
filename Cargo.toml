@@ -89,5 +89,9 @@ path = "src/bin/closures.rs"
 name = "iterators"
 path = "src/bin/iterators.rs"
 
+[[bin]]
+name = "box"
+path = "src/bin/box.rs"
+
 [dependencies]
 rand = "0.5.5"
