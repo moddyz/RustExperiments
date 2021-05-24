@@ -105,5 +105,9 @@ path = "src/bin/drop.rs"
 name = "rc"
 path = "src/bin/rc.rs"
 
+[[bin]]
+name = "threads"
+path = "src/bin/threads.rs"
+
 [dependencies]
 rand = "0.5.5"
