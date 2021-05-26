@@ -109,5 +109,9 @@ path = "src/bin/rc.rs"
 name = "threads"
 path = "src/bin/threads.rs"
 
+[[bin]]
+name = "channels"
+path = "src/bin/channels.rs"
+
 [dependencies]
 rand = "0.5.5"
