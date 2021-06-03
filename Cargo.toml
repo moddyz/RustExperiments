@@ -113,5 +113,9 @@ path = "src/bin/threads.rs"
 name = "channels"
 path = "src/bin/channels.rs"
 
+[[bin]]
+name = "mutex"
+path = "src/bin/mutex.rs"
+
 [dependencies]
 rand = "0.5.5"
